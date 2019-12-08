@@ -1,0 +1,40 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="urn:enterprise.soap.sforce.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <soapenv:Body>
+      <loginResponse>
+         <result>
+            <metadataServerUrl>https://ap16.salesforce.com/services/Soap/m/43.0/00D2w000000n7pN</metadataServerUrl>
+            <passwordExpired>false</passwordExpired>
+            <sandbox>false</sandbox>
+            <serverUrl>https://ap16.salesforce.com/services/Soap/c/43.0/00D2w000000n7pN/0DF900000004vPL</serverUrl>
+            <sessionId>00D2w000000n7pN!ARgAQAEjyJ.rCH0a336jgTUDk4Y5_Dlq1xos8vMCHiKXuA3NqpNbSGs5AIW_Htlb.70mpZvGGJGgYiDbDSUQx1DKRAOaOq9J</sessionId>
+            <userId>0052w000000FenTAAS</userId>
+            <userInfo>
+               <accessibilityMode>false</accessibilityMode>
+               <chatterExternal>false</chatterExternal>
+               <currencySymbol>$</currencySymbol>
+               <orgAttachmentFileSizeLimit>5242880</orgAttachmentFileSizeLimit>
+               <orgDefaultCurrencyIsoCode>USD</orgDefaultCurrencyIsoCode>
+               <orgDefaultCurrencyLocale>en_US</orgDefaultCurrencyLocale>
+               <orgDisallowHtmlAttachments>false</orgDisallowHtmlAttachments>
+               <orgHasPersonAccounts>false</orgHasPersonAccounts>
+               <organizationId>00D2w000000n7pNEAQ</organizationId>
+               <organizationMultiCurrency>false</organizationMultiCurrency>
+               <organizationName>HCL Technologies</organizationName>
+               <profileId>00e2w0000013iypAAA</profileId>
+               <roleId xsi:nil="true"/>
+               <sessionSecondsValid>7200</sessionSecondsValid>
+               <userDefaultCurrencyIsoCode xsi:nil="true"/>
+               <userEmail>thiagaece@gmail.com</userEmail>
+               <userFullName>Thiagarajan Parthiban</userFullName>
+               <userId>0052w000000FenTAAS</userId>
+               <userLanguage>en_US</userLanguage>
+               <userLocale>en_US</userLocale>
+               <userName>thiagaece@gmail.com</userName>
+               <userTimeZone>America/Los_Angeles</userTimeZone>
+               <userType>Standard</userType>
+               <userUiSkin>Theme3</userUiSkin>
+            </userInfo>
+         </result>
+      </loginResponse>
+   </soapenv:Body>
+</soapenv:Envelope>

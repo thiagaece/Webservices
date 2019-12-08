@@ -1,0 +1,14 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:enterprise.soap.sforce.com">
+   <soapenv:Header>
+      <urn:SessionHeader>
+         <urn:sessionId>${#Global#sessionid}</urn:sessionId>
+      </urn:SessionHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn:getUpdated>
+         <urn:sObjectType>Account</urn:sObjectType>
+         <urn:startDate>2019-12-02T18:18:03.604Z</urn:startDate>
+         <urn:endDate>2019-12-02T18:18:03.604Z</urn:endDate>
+      </urn:getUpdated>
+   </soapenv:Body>
+</soapenv:Envelope>
