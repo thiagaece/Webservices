@@ -481,7 +481,7 @@ log.info result2.status</script></con:config></con:testStep><con:properties><con
    <soap:Header/>\r
    <soap:Body>\r
       <tem:Multiply>\r
-         <tem:intA>?</tem:intA>\r
+         <tem:intA>154</tem:intA>\r
          <tem:intB>?</tem:intB>\r
       </tem:Multiply>\r
    </soap:Body>\r
@@ -620,7 +620,7 @@ context.setProperty("PassValue",getResult)
 runTS2 = testRunner.testCase.testSteps["CheckValues_2"]
 runTS2.run(testRunner,context)
 
-</script></con:config></con:testStep><con:properties><con:property><con:name>val1</con:name><con:value>13</con:value></con:property><con:property><con:name>val2</con:name><con:value>100</con:value></con:property></con:properties></con:testCase><con:properties><con:property><con:name>GlobalVal</con:name><con:value>100</con:value></con:property></con:properties></con:testSuite><con:mockService id="e517e9d3-bd89-4923-bffc-0ef9b07ae414" port="8888" path="/" host="THIAGA" name="MultiplyMock" bindToHostOnly="false" docroot=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="Multiply" id="c9a596b5-289c-4714-8fba-9b839e19b84c" interface="CalculatorSoap12" operation="Multiply"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>QUERY_MATCH</con:dispatchStyle><con:response name="Postitive" id="91827d23-15c0-4980-97f9-77d6f47a83c2" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
+</script></con:config></con:testStep><con:properties><con:property><con:name>val1</con:name><con:value>13</con:value></con:property><con:property><con:name>val2</con:name><con:value>100</con:value></con:property></con:properties></con:testCase><con:properties><con:property><con:name>GlobalVal</con:name><con:value>100</con:value></con:property></con:properties></con:testSuite><con:mockService id="e517e9d3-bd89-4923-bffc-0ef9b07ae414" port="8888" path="/" host="THIAGA" name="MultiplyMock" bindToHostOnly="false" docroot=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.mock.WsdlMockService@require-soap-action">false</con:setting></con:settings><con:properties/><con:mockOperation name="Multiply" id="c9a596b5-289c-4714-8fba-9b839e19b84c" interface="CalculatorSoap12" operation="Multiply"><con:settings/><con:defaultResponse>Default</con:defaultResponse><con:dispatchStyle>QUERY_MATCH</con:dispatchStyle><con:response name="Default" id="91827d23-15c0-4980-97f9-77d6f47a83c2" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:tem="http://tempuri.org/">
    <soap:Header/>
    <soap:Body>
       <tem:MultiplyResponse>
@@ -631,7 +631,7 @@ runTS2.run(testRunner,context)
    <soap:Header/>
    <soap:Body>
       <tem:MultiplyResponse>
-         <tem:MultiplyResult>500</tem:MultiplyResult>
+         <tem:MultiplyResult>invalid</tem:MultiplyResult>
       </tem:MultiplyResponse>
    </soap:Body>
-</soap:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/CalculatorSoap/MultiplyResponse"/></con:response><con:dispatchConfig xsi:type="con:MockOperationQueryMatchDispatch" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:query><con:name>Positive</con:name><con:query>//*:intA</con:query><con:match>10</con:match><con:response>Response 1</con:response></con:query><con:query><con:name>Negative</con:name><con:query>//*:intA</con:query><con:match>?</con:match><con:response>Response 1</con:response></con:query></con:dispatchConfig></con:mockOperation></con:mockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
+</soap:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://tempuri.org/CalculatorSoap/MultiplyResponse"/></con:response><con:dispatchConfig xsi:type="con:MockOperationQueryMatchDispatch" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:query><con:name>Positive</con:name><con:query>//*:intA</con:query><con:match>10</con:match><con:response>Default</con:response></con:query><con:query><con:name>Negative</con:name><con:query>//*:intA</con:query><con:match>?</con:match><con:response>Negative</con:response></con:query></con:dispatchConfig></con:mockOperation></con:mockService><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
