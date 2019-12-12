@@ -19150,7 +19150,6 @@ log.info getServer
 com.eviware.soapui.SoapUI.globalProperties.setPropertyValue("sessionid",getSession)
 com.eviware.soapui.SoapUI.globalProperties.setPropertyValue("Url",getServer)
 
-
 runTc2 =testRunner.testCase.testSuite.testCases["LogOutTC"].testSteps["Logout"]
 runTc2.run(testRunner,context)
 
